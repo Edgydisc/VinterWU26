@@ -1,1 +1,54 @@
 /* Här skrivs all din CSS */
+#container1 {
+	height: 150vh;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 2fr 1fr 4fr 4fr 5fr 2fr;
+	grid-template-areas:
+	'hd hd'
+	'nv nv'
+	'as s1'
+	'as s2'
+	'as s3'
+	'ft ft';
+}
+
+header {
+	background: black;
+	grid-area: hd;
+}
+
+nav {
+	background: purple;
+	grid-area: nv;
+}
+aside {
+	background: indigo;
+	grid-area: as;
+}
+footer {
+	background: darkblue;
+	grid-area: ft;
+}
+
+#section1 {
+	background: pink;
+	grid-area: s1;
+
+}
+
+#section2 {
+	background: hotpink;
+	grid-area: s2;
+
+}
+
+#section3 {
+	background: deeppink;
+	grid-area: s3;
+
+}
+
+#menu {
+	
+}
